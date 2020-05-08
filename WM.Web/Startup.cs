@@ -4,7 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using WM.Core.Interfaces;
+using WM.Core.Services;
 using WM.Infrastructure.Data;
+using WM.Web.Interfaces;
+using WM.Web.Services;
 
 namespace WM.Web
 {
@@ -25,6 +29,11 @@ namespace WM.Web
             services.AddDbContext<ApplContext>(c =>
                 c.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
                     x => x.MigrationsAssembly("WM.Infrastructure")));
+
+            services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
+            services.AddScoped<IProductViewModelService, ProductViewModelService>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductRepository, ProductRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

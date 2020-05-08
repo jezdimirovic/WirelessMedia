@@ -4,9 +4,8 @@ using WM.Core.Entities;
 
 namespace WM.Core.Interfaces
 {
-    public interface IProductRepository : IRepository<Product>
+    public interface IProductService
     {
-        // any custome  
         Task<List<Product>> GetProductsAsync();
     }
 }
