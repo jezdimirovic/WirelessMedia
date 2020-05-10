@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WM.Web", "WM.Web\WM.Web.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WM.Core", "WM.Core\WM.Core.csproj", "{D7EF86AD-BD03-45A4-8F66-FD53A10F6B8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WM.Infrastructure", "WM.Infrastructure\WM.Infrastructure.csproj", "{0EDE689C-0C8B-4E63-97A2-FE8C52D0E917}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WM.Infrastructure", "WM.Infrastructure\WM.Infrastructure.csproj", "{0EDE689C-0C8B-4E63-97A2-FE8C52D0E917}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BD95F865-C485-4BEA-8C14-0A3B8BBCDA07}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
