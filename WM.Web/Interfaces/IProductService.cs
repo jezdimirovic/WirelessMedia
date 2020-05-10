@@ -6,5 +6,6 @@ namespace WM.Web.Interfaces
     public interface IProductViewModelService
     {
         Task<ProductIndexViewModel> GetProductIndexViewModel();
+        Task<ProductIndexViewModel> GetProductIndexViewModelFromJson(string contentRootPath);
     }
 }

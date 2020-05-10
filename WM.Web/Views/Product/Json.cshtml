@@ -1,0 +1,8 @@
+﻿
+@{
+    ViewData["Title"] = "Products";
+    @model WM.Web.ViewModels.ProductIndexViewModel
+}
+
+<h1 class="display-4">Products <small class="text-muted">JSON</small></h1>
+@await Html.PartialAsync("_productTable", Model)

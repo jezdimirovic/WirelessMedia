@@ -1,0 +1,59 @@
+[
+  {
+    "Id": 1,
+    "Name": "Nik toceno 0.5",
+    "Price": 130.00,
+    "CategoryName": "Cat name 1",
+    "ManufacturerName": "Manu name 1",
+    "SupplierName": "Supp name 1"
+  },
+  {
+    "Id": 2,
+    "Name": "Jelen toceno 0.5",
+    "Price": 130.00,
+    "CategoryName": "Cat name 1",
+    "ManufacturerName": "Manu name 1"
+  },
+  {
+    "Id": 3,
+    "Name": "Domaca kafa",
+    "Price": 110.00,
+    "CategoryName": "Cat name 2",
+    "ManufacturerName": "Manu name 2"
+  },
+  {
+    "Id": 4,
+    "Name": "Cappuccino",
+    "Price": 130.00,
+    "CategoryName": "Cat name 2",
+    "ManufacturerName": "Manu name 3"
+  },
+  {
+    "Id": 5,
+    "Name": "Budweiser 0.5",
+    "Price": 140.00,
+    "CategoryName": "Cat name 5",
+    "ManufacturerName": "Manu name 4"
+  },
+  {
+    "Id": 6,
+    "Name": "Tuborg 0.5",
+    "Price": 140.00,
+    "CategoryName": "Cat name 5",
+    "ManufacturerName": "Manu name 4"
+  },
+  {
+    "Id": 7,
+    "Name": "Breskva 0.2",
+    "Price": 140.00,
+    "CategoryName": "Cat name 6",
+    "ManufacturerName": "Manu name 5"
+  },
+  {
+    "Id": 8,
+    "Name": "Sumsko voce 0.2",
+    "Price": 140.00,
+    "CategoryName": "Cat name 6",
+    "ManufacturerName": "Manu name 5"
+  }
+]

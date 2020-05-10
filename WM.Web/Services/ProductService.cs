@@ -1,4 +1,7 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using WM.Web.Interfaces;
 using WM.Web.ViewModels;
@@ -13,6 +16,7 @@ namespace WM.Web.Services
         {
             _coreService = coreService;
         }
+
         public async Task<ProductIndexViewModel> GetProductIndexViewModel()
         {
             var products = await _coreService.GetProductsAsync();
@@ -26,6 +30,22 @@ namespace WM.Web.Services
                 CategoryName = p.Category.Name,
                 SupplierName = p.Supplier?.Name
             });
+
+            return vm;
+        }
+
+        public async Task<ProductIndexViewModel> GetProductIndexViewModelFromJson(string contentRootPath)
+        {
+            var file = Path.Combine(contentRootPath, "wwwroot", "data", "data.json");
+            var vm = new ProductIndexViewModel();
+
+            if (File.Exists(file))
+            {
+                using (FileStream fs = File.OpenRead(file))
+                {
+                    vm.ProductViewModels = await JsonSerializer.DeserializeAsync<List<ProductViewModel>>(fs);
+                }
+            }
 
             return vm;
         }
